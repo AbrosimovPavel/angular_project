@@ -8,10 +8,7 @@
  * Controller of the angularProjectApp
  */
 angular.module('angularProjectApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, articlesService) {
+    $scope.articles = articlesService.articles;
+    articlesService.getArticles();
   });

@@ -14,7 +14,9 @@ angular.module('angularProjectApp')
                     console.log("Error");
                 })
         }
-     
+
+
+
         return{
             articles: _articles,
             getArticles: _getArticles

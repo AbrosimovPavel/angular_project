@@ -16,6 +16,9 @@ body {
   padding-bottom: 20px;
 }
 
+hr{
+  margin: 0 0 10px 0;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -69,7 +72,12 @@ body {
 }
 
 .row{
-  margin-bottom:20px;
+  margin-bottom:60px;
+}
+
+#widgetBlock{
+  text-align: center;
+  font-size: 22px;
 }
 
 /* Responsive: Portrait tablets and up */

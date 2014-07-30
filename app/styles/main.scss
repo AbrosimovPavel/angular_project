@@ -68,11 +68,13 @@ body {
   }
 }
 
+.row{
+  margin-bottom:20px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+
 
   /* Remove the padding we set earlier */
   .header,

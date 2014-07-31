@@ -3,11 +3,11 @@
         <div class="row" ng-repeat="article in articles">
             <img ng-src="{{article.image}}" class="img-responsive"/>
             <div class="col-xs-12">
-                <h2>Title {{article.name}} </h2><hr class="gray"/>
+                <h2>{{article.title}} </h2><hr class="gray"/>
             </div>
             <div class="col-xs-6 col-md-4">
-                <div class="col-xs-6">date</div>
-                <div class="col-xs-6">author</div>
+                <div class="col-xs-6">{{article.date | date}}</div>
+                <div class="col-xs-6">{{article.author}}</div>
             </div>
             <div class="col-xs-12">
                 <hr class="gray">
@@ -29,8 +29,20 @@
                         <h4 class="modal-title" id="myModalLabel">Add article</h4>
                     </div>
                     <div class="modal-body">
-                        <form name="saveForm" class="form-horizontal">
-                            
+                        <form name="saveForm" class="form-horizontal" ng-submit="addArticle()">
+                        	<div>
+	                        	<label>Author</label>
+	                        	<input type="text" name="author" id="author" ng-model="article.author">
+                            </div>
+                        	<div>
+	                        	<label>Title</label>
+	                        	<input type="text" name="title" id="titel" ng-model="article.title">
+                            </div>
+                            <div>
+                            	<label>Description</label>
+	                        	<textarea  type="text" name="description" id="description" ng-model="article.description"></textarea>
+                            </div>
+                            <input type="submit" value="submit" class="btn btn-primary" id="">
                         </form>
                     </div>
                 </div>

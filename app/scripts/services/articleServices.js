@@ -15,7 +15,11 @@ angular.module('angularProjectApp')
                 })
         }
 
-
+        // var _addArticles = function(){
+        //     $http.post("/scripts/data/articles.json", 'data').success(
+                
+        //         )
+        // }
 
         return{
             articles: _articles,
